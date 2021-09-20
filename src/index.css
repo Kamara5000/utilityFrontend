@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fom:focus-within{
+    transform: translateY(-10px);
+    filter: drop-shadow();
+}
+
+.active{
+    color: #fff;
+}
