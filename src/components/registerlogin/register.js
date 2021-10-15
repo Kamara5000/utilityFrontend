@@ -33,7 +33,8 @@ const Reg=(props)=>{
               console.log(m)
                         axios({
                                 method: "post",
-                                url: "http://localhost:5000/register",
+                                // url: "http://localhost:5000/register",
+                                url: "https://boiling-stream-11406.herokuapp.com/register",
                                 data: m,
                                 // headers: { 
                                 // 'Content-Type': 'multipart/form-data'
