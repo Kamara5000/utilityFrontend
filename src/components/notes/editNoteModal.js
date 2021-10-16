@@ -49,7 +49,8 @@ const EditNoteModal = ({note, noteSelected, editNote}) => {
        
                  axios({
                          method: "patch",
-                         url: `http://localhost:5000/notes/edit/${id}`,
+                        //  url: `http://localhost:5000/notes/edit/${id}`,
+                        url: `https://boiling-stream-11406.herokuapp.com/notes/edit/${id}`,
                          data: m,
                          headers: { 
                          'authorization': `Bearer ${localStorage.getItem('token')}`,

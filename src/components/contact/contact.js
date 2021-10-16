@@ -35,7 +35,8 @@ useEffect(()=>{
         handleLoading(true);
         axios({
                     method: "get",
-                    url: `http://localhost:5000/contact/${username}`,
+                    // url: `http://localhost:5000/contact/${username}`,
+                    url: `https://boiling-stream-11406.herokuapp.com/contact/${username}`,
                     headers: { 
                     'authorization': `Bearer ${localStorage.getItem('token')}`
                      }, 

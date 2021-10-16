@@ -36,16 +36,17 @@ useEffect(()=>{
         handleLoading(true);
         axios({
                     method: "get",
-                    url: `http://localhost:5000/notes/${username}`,
+                    // url: `http://localhost:5000/notes/${username}`,
+                    url: `https://boiling-stream-11406.herokuapp.com/notes/${username}`,
                     headers: { 
                     'authorization': `Bearer ${localStorage.getItem('token')}`
                      }, 
                  })
             
             .then(res=>{
-            console.log(res);
+            //console.log(res);
             const query = filter.toLowerCase();
-            console.log(query);
+            //console.log(query);
             const filteredNotes = res.data.filter(notes=>{
             const title = `${notes.title}`;
             if(query.length === 1){
@@ -77,7 +78,7 @@ useEffect(()=>{
                      })
                 
                 .then(res=>{
-            console.log(res);
+            //console.log(res);
             if(res.data.error === "jwt expired"){
                 history.push("/login");
             }else{

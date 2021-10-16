@@ -26,7 +26,8 @@ const history = useHistory();
       const m = {imgPublicId}
                  axios({
                          method: "delete",
-                         url: `http://localhost:5000/contact/delete/${_id}`,
+                        //  url: `http://localhost:5000/contact/delete/${_id}`,
+                         url: `https://boiling-stream-11406.herokuapp.com/contact/delete/${_id}`,
                          data:m,
                          headers: { 
                          'authorization': `Bearer ${localStorage.getItem('token')}`,

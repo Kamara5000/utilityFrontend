@@ -29,7 +29,8 @@ useEffect(()=>{
 
             axios({
                         method: "get",
-                        url: `http://localhost:5000/todo/${username}`,
+                        // url: `http://localhost:5000/todo/${username}`,
+                        url: `https://boiling-stream-11406.herokuapp.com/todo/${username}`,
                         headers: { 
                         'authorization': `Bearer ${localStorage.getItem('token')}`
                          }, 
@@ -76,7 +77,8 @@ const addtodoItem=()=>{
             if (todo != null) {
                 axios({
                     method: "post",
-                    url: `http://localhost:5000/todo/add/${username}`,
+                    // url: `http://localhost:5000/todo/add/${username}`,
+                    url: `https://boiling-stream-11406.herokuapp.com/todo/add/${username}`,
                     data:m,
                     headers: { 
                     'authorization': `Bearer ${localStorage.getItem('token')}`
@@ -111,7 +113,8 @@ const delTodo =(t)=>{
         let _id = t._id;
     axios({
         method: "delete",
-        url: `http://localhost:5000/todo/delete/${_id}`,
+        // url: `http://localhost:5000/todo/delete/${_id}`,
+        url: `https://boiling-stream-11406.herokuapp.com/todo/delete/${_id}`,
         headers: { 
         'authorization': `Bearer ${localStorage.getItem('token')}`,
         //'Content-Type': 'multipart/form-data'

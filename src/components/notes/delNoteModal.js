@@ -24,10 +24,11 @@ const history = useHistory();
     
     //alert(selectedContact._id)
     const {_id} = selectedNote;
-      console.log(_id)
+      //console.log(_id)
                  axios({
                          method: "delete",
-                         url: `http://localhost:5000/notes/delete/${_id}`,
+                        //  url: `http://localhost:5000/notes/delete/${_id}`,
+                         url: `https://boiling-stream-11406.herokuapp.com/notes/delete/${_id}`,
                          headers: { 
                          'authorization': `Bearer ${localStorage.getItem('token')}`,
                          //'Content-Type': 'multipart/form-data'

@@ -36,7 +36,8 @@ const AddNoteModal = ({handleAddNote, username}) => {
        
                  axios({
                          method: "post",
-                         url: `http://localhost:5000/notes/add/${username}`,
+                        //  url: `http://localhost:5000/notes/add/${username}`,
+                         url: `https://boiling-stream-11406.herokuapp.com/notes/add/${username}`,
                          data: m,
                          headers: { 
                          'authorization': `Bearer ${localStorage.getItem('token')}`,
