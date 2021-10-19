@@ -71,7 +71,7 @@ useEffect(()=>{
     } else {
             axios({
                         method: "get",
-                        url: `http://localhost:5000/notes/${username}`,
+                        url: `https://boiling-stream-11406.herokuapp.com/notes/${username}`,
                         headers: { 
                         'authorization': `Bearer ${localStorage.getItem('token')}`
                          }, 

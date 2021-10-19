@@ -81,7 +81,8 @@ const AddContactModal = ({handleAddContact, username}) => {
                           }, 
                       })
  
-                 .then(response=>{console.log(response.data); 
+                 .then(response=>{
+                   //console.log(response.data); 
 
                     if(response.data.message === "success"){
                      setSuccess(true);

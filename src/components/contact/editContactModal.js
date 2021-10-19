@@ -102,7 +102,8 @@ const EditContactModal = ({contact, contactSelected, editContact}) => {
                           }, 
                       })
  
-                 .then(response=>{console.log(response.data); 
+                 .then(response=>{
+                   //console.log(response.data); 
                     if(response.data.message === "success"){
                      setSuccess(true);
                     }

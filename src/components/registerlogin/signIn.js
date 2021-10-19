@@ -31,7 +31,7 @@ const Log=(props)=>{
     axios.post('https://boiling-stream-11406.herokuapp.com/login',m)
     .then(response=>{//console.log(response.data);
       let {token, message,username} = response.data;
-      console.log(message, token,username);
+      //console.log(message, token,username);
     
       if(message === "success"){
       localStorage.setItem('token', token); 

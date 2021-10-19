@@ -84,9 +84,9 @@ const addtodoItem=()=>{
                     'authorization': `Bearer ${localStorage.getItem('token')}`
                         }, 
                     }).then(res=>{
-                    console.log(res);
+                    //console.log(res);
                     
-                    if(res.data.error === "jwt expired"){
+                    if(res.data.error == "jwt expired"){
                     history.push("/login");
                     }else{
                     
