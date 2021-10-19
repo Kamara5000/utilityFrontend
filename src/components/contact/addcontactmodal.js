@@ -68,7 +68,7 @@ const AddContactModal = ({handleAddContact, username}) => {
     m.append('instagram', instagram);
     m.append('twitter', twitter);
     m.append('img', img);
-       console.log(m)
+       //console.log(m)
        
                  axios({
                          method: "post",
@@ -90,7 +90,8 @@ const AddContactModal = ({handleAddContact, username}) => {
                     if(response.data.error === "jwt expired"){
                         history.push("/login");
                     }
-                  }).catch(err=>console.log(err));
+                  }).catch(//err=>console.log(err)
+                  );
 
  }
 

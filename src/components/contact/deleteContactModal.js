@@ -45,7 +45,8 @@ const history = useHistory();
                     if(response.data.error === "jwt expired"){
                       history.push("/login");
                   }
-                  }).catch(err=>console.log(err));
+                  }).catch(//err=>console.log(err)
+                  );
   }
 
   const goBack = ()=>{

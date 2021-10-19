@@ -30,7 +30,7 @@ const Reg=(props)=>{
         const handleSubmit=(e)=>{
            e.preventDefault();
             let m= {email:mail,  password:pass};
-              console.log(m)
+              //console.log(m)
                         axios({
                                 method: "post",
                                 // url: "http://localhost:5000/register",
@@ -41,7 +41,7 @@ const Reg=(props)=>{
                                 //  }, 
                              })
         
-                        .then(response=>{console.log(response.data); 
+                        .then(response=>{//console.log(response.data); 
                             if (response.data.message === "success") {
                               changeReg(!reg)
                             }
@@ -50,7 +50,8 @@ const Reg=(props)=>{
                               handleExist(true)
                             }
                             
-                         }).catch(err=>console.log(err));
+                         }).catch(//err=>console.log(err)
+                         );
         };
 
     

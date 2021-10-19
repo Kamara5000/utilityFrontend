@@ -89,7 +89,7 @@ const EditContactModal = ({contact, contactSelected, editContact}) => {
     m.append('twitter', twitter);
     m.append('img', img);
     m.append('oldImgUrl', contact.imgPublicId);
-    console.log(m)
+    //console.log(m)
        
                  axios({
                          method: "patch",
@@ -110,7 +110,8 @@ const EditContactModal = ({contact, contactSelected, editContact}) => {
                     if(response.data.error === "jwt expired"){
                         history.push("/login");
                     }
-                  }).catch(err=>console.log(err));
+                  }).catch(//err=>console.log(err)
+                  );
 
  }
 

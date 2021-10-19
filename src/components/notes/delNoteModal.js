@@ -35,7 +35,7 @@ const history = useHistory();
                           }, 
                       })
  
-                 .then(response=>{console.log(response.data); 
+                 .then(response=>{//console.log(response.data); 
 
                     if(response.data.message === "success"){
 
@@ -44,7 +44,8 @@ const history = useHistory();
                     if(response.data.error === "jwt expired"){
                       history.push("/login");
                   }
-                  }).catch(err=>console.log(err));
+                  }).catch(//err=>console.log(err)
+                  );
   }
 
   const goBack = ()=>{

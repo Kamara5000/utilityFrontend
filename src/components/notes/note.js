@@ -66,8 +66,8 @@ useEffect(()=>{
                 handleFiltered(filteredNotes);
                 handleNotes(filteredNotes)
                }
-        }).catch(err=>{
-                console.log(err);})
+        }).catch(//err=>{console.log(err);}
+        )
     } else {
             axios({
                         method: "get",
@@ -89,8 +89,8 @@ useEffect(()=>{
             }
             
             
-            }).catch(err=>{
-            console.log(err)})
+            }).catch(//err=>{console.log(err)}
+            )
         }
 
         if(isMounted){
@@ -103,7 +103,7 @@ useEffect(()=>{
     
 },[filter,addNote,selectedNote]);
 
-console.log(notes);
+//console.log(notes);
 
     return(
         <React.Fragment>

@@ -32,7 +32,7 @@ const AddNoteModal = ({handleAddNote, username}) => {
   const handleSubmit=(e)=>{
     e.preventDefault();
      let m= {title,body,d};
-       console.log(m)
+       //console.log(m)
        
                  axios({
                          method: "post",
@@ -45,7 +45,8 @@ const AddNoteModal = ({handleAddNote, username}) => {
                           }, 
                       })
  
-                 .then(response=>{console.log(response.data); 
+                 .then(response=>{
+                   //console.log(response.data); 
 
                     if(response.data.message === "success"){
                      setSuccess(true);
@@ -53,7 +54,8 @@ const AddNoteModal = ({handleAddNote, username}) => {
                     if(response.data.error === "jwt expired"){
                         history.push("/login");
                     }
-                  }).catch(err=>console.log(err));
+                  }).catch(//err=>console.log(err)
+                  );
 
  }
 

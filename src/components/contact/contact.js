@@ -128,7 +128,7 @@ useEffect(()=>{
 
 },[filter,addcontact,selectedContact]);
 
-console.log(contacts);
+//console.log(contacts);
 
     return(
         <React.Fragment>

@@ -26,7 +26,7 @@ const Log=(props)=>{
   const handleLog = (e)=>{
     e.preventDefault();
     let m= {username:mail,  password:pass};
-    console.log(m)
+    //console.log(m)
     //  axios.post('http://localhost:5000/login',m)
     axios.post('https://boiling-stream-11406.herokuapp.com/login',m)
     .then(response=>{//console.log(response.data);

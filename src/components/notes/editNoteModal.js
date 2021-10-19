@@ -45,7 +45,7 @@ const EditNoteModal = ({note, noteSelected, editNote}) => {
 
      let m= {title,body};
 
-    console.log(m)
+    //console.log(m)
        
                  axios({
                          method: "patch",
@@ -57,14 +57,16 @@ const EditNoteModal = ({note, noteSelected, editNote}) => {
                           }, 
                       })
  
-                 .then(response=>{console.log(response.data); 
+                 .then(response=>{
+                   //console.log(response.data); 
                     if(response.data.message === "success"){
                      setSuccess(true);
                     }
                     if(response.data.error === "jwt expired"){
                         history.push("/login");
                     }
-                  }).catch(err=>console.log(err));
+                  }).catch(//err=>console.log(err)
+                  );
 
  }
 
