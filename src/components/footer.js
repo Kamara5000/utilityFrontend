@@ -42,19 +42,19 @@ const Footer= ()=>{
         </nav>
         <div className="flex justify-center mt-8 space-x-6">
             <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="text-gray-400 text-xl  hover:text-gray-500">
-                <span className="fab fa-facebook"></span>
+                <span className="fa fa-facebook"></span>
                 
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="text-gray-400 text-xl  hover:text-gray-500">
-                <span className="fab fa-instagram"></span>
+                <span className="fa fa-instagram"></span>
                 
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noreferrer"  className="text-gray-400 text-xl  hover:text-gray-500">
-                <span className="fab fa-twitter"></span>
+                <span className="fa fa-twitter"></span>
                 
             </a>
             <a href="https://www.github.com" target="_blank"  rel="noreferrer" className="text-gray-400 text-xl  hover:text-gray-500">
-                <span className="fab fa-github"></span>
+                <span className="fa fa-github"></span>
                 
             </a>
             

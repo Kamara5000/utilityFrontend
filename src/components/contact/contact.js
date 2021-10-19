@@ -43,7 +43,7 @@ useEffect(()=>{
                  })
             
             .then(res=>{
-            console.log(res);
+            //console.log(res);
             const query = filter.toLowerCase();
             const filteredContact = res.data.filter(contact=>{
             const fullName = `${contact.name}`;
@@ -63,8 +63,8 @@ useEffect(()=>{
             
         
             
-            }).catch(err=>{
-                console.log(err);})
+            }).catch(//err=>{console.log(err);}
+            )
     } else {
             axios({
                         method: "get",
@@ -89,8 +89,8 @@ useEffect(()=>{
                 handleLoading(false);
             }
             
-            }).catch(err=>{
-            console.log(err)})
+            }).catch(//err=>{console.log(err)}
+            )
         }
     
         //clean up

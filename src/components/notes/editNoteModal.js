@@ -89,7 +89,7 @@ const EditNoteModal = ({note, noteSelected, editNote}) => {
                 </h2>
 
                 <button type="button"  onClick={closem}>
-                    <span className="far fa-window-close text-xl justify-end self-end"></span>
+                    <span className="fa fa-window-close text-xl justify-end self-end"></span>
                 </button>
                 
                 </div>
