@@ -37,7 +37,7 @@ useEffect(()=>{
                      })
                 
                 .then(res=>{
-            console.log(res);
+            //console.log(res);
             if(res.data.error === "jwt expired"){
                 history.push("/login");
             }else{
@@ -51,8 +51,8 @@ useEffect(()=>{
             }
             
             
-            }).catch(err=>{
-            console.log(err)})
+            }).catch(//err=>{console.log(err)}
+            )
         
 
         
@@ -71,7 +71,7 @@ const handleSet = (event)=>{
 const addtodoItem=()=>{
     let isMounted = true
     let m = {todo:todo};
-    console.log(todo)
+    //console.log(todo)
     handleAdd(!add);
     if (add) {
             if (todo != null) {
@@ -99,8 +99,8 @@ const addtodoItem=()=>{
                     }
 
                    
-                }).catch(err=>{
-                    console.log(err)})
+                }).catch(//err=>{console.log(err)}
+                )
 
                 handleTodo(null)
                 
@@ -121,7 +121,7 @@ const delTodo =(t)=>{
          }, 
      })
 
-.then(response=>{console.log(response.data); 
+.then(response=>{//console.log(response.data); 
 
    if(response.data.message === "success"){
         handleDel(true)
@@ -131,7 +131,8 @@ const delTodo =(t)=>{
    if(response.data.error === "jwt expired"){
      history.push("/login");
  }
- }).catch(err=>console.log(err));
+ }).catch(//err=>console.log(err)
+ );
  
 }
 
